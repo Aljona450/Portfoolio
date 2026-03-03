@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Turvaline Parool</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Parooli analüüs</h2>
+        <div class="input-wrapper">
+            <input type="password" id="pwInput" placeholder="Sisesta parool...">
+            <button id="toggleView">Näita</button>
+        </div>
+
+        <div class="meter-container">
+            <div id="strengthFill" class="meter-fill"></div>
+        </div>
+
+        <ul class="check-list">
+            <li id="crit-len">Vähemalt 8 sümbolit</li>
+            <li id="crit-up">Suur algustäht</li>
+            <li id="crit-num">Vähemalt üks number</li>
+            <li id="crit-spec">Erimärk (@#$!)</li>
+        </ul>
+        <p id="score-text">Tugevus: 0%</p>
+    </div>
+    <script src="script7.js"></script>
+</body>
+</html>
